@@ -1,0 +1,106 @@
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  position: relative;
+  overflow-x: hidden;
+}
+
+#background-video {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 60px 20px 30px;
+  background: rgba(0,0,0,0.4);
+}
+
+.hero h1 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+/* Main container */
+.weather-container {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+/* Weather Card */
+.weather-card {
+  background: rgba(0,0,0,0.3);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  max-width: 350px;
+  margin-inline: auto;
+  backdrop-filter: blur(4px);
+}
+
+/* Forecast */
+.forecast-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding: 15px 0;
+  scrollbar-width: none;
+}
+
+.forecast-container::-webkit-scrollbar {
+  display: none;
+}
+
+.forecast-hour {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 12px;
+  min-width: 80px;
+  flex-shrink: 0;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  color: #fff;
+}
+
+.carousel-controls {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.carousel-controls button {
+  background: rgba(0,0,0,0.4);
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  font-size: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.4);
+  margin-top: 50px;
+}
